@@ -1,0 +1,524 @@
+/* about.css 
+- Reset
+- Custom properties
+- Body
+- Header
+- Main
+- Footer
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li{ list-style: none;}
+
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    color: var(--color-beige);
+    font-size: inherit;
+    text-transform: inherit;
+     /* Font family of the headings
+    It was not working when creating it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+}
+p a{
+    display: inline;
+}
+img , video , iframe{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+form, input, textarea, label, button, fieldset, legend, select{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: transparent;
+}    
+
+:root{
+    font-size: 100%;   
+    /* Brand colores to use */
+    --color-black: #1D1D1B; 
+    --color-darkgrey: #343434;
+    --color-grey: #5A5A5A;
+    --color-darkgreen: #2B3D2D;
+    --color-green: #AEB884;
+    --color-orange: #D78B30;
+    --color-greige: #BDA974;
+    --color-beige: #E4E0C6;
+    --color-lightbeige: #F2EBD9;
+    --color-white: #F8F5ED;
+    /* Font of the body */
+    --font-body: 'Manrope', sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+    text-transform: inherit;
+    font-size: inherit; 
+    color: var(--color-lightbeige);
+    background-image: url(../assets/Background-about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Style of the Header 
+Structure:
+   - Header
+   - Header-wrapper
+   - Menu
+   - Header-ul
+   - Header-li
+   - Header-links
+   - Active
+   - Header-button
+   - Header-svg
+*/
+.Header{
+    width: 100%;
+    padding: 1.25rem .625rem;
+
+    position: relative;
+    z-index: 1;
+}
+.Header-wrapper{
+    width: 80%;
+    margin:auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.Header-li{
+    font-size: 1rem;
+}
+.Header-links:hover{
+    color: var(--color-greige);
+}
+.Header-links:active{
+    color: var(--color-greige);
+}
+.Active{
+    color: var(--color-greige);
+}
+.Header-button{
+    display: none;
+}
+.Header-svg{
+    width: 2rem;
+}
+
+/* Style of the Main section
+Structure: 
+    - Main
+    - Myself
+    - Posh
+    - Contact
+    - Footer
+ */
+.Main{
+    width: 100%;
+    margin: 3rem 0 0;
+}
+
+/* Style of the Myself section
+Structure: 
+    - Myself
+    - Myself-wrapper
+    - Myself-left
+    - Myself-star
+    - Myself-h2
+    - Myself-span
+    - Myself-p
+    - Myself-right
+    - Myself-img
+    - Myself-video
+ */
+.Myself{
+    width: 100%;
+}
+.Myself-wrapper{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.Myself-left{
+    width: 50%;
+    text-align: end;
+}
+.Myself-star{
+    width: 1.5rem;
+    display: inline;
+
+    animation: rotate 6s ease infinite;
+}
+/* keyframes are crucial for an animation to work */
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.Myself-h2{
+    font-size: 3.5rem;
+    text-transform: lowercase;
+    margin: 0 0 2rem 0;
+}
+.Myself-span{
+    text-transform: uppercase;
+}
+.Myself-p{
+    margin: 4rem 0 0;
+    line-height: 1.75rem;
+}
+.Myself-right{
+    width: 50%;
+    position: relative;
+}
+
+.Front{
+    position: relative;
+    z-index: 1;
+}
+.Myself-img:hover{
+    opacity: 0;
+}
+
+.Myself-video{
+    width: 100%;
+    border-radius: 2.1875rem;
+
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Style of the Posh Design section
+Structure: 
+    - Posh
+    - Posh-wrapper
+    - Posh-h3
+    - Posh-p
+ */
+.Posh{
+    width: 100%;
+    margin: 6rem 0;
+}
+.Posh-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.Posh-h3{
+    font-size: 2.5rem;
+}
+.Posh-p{
+    margin: 2rem 0;
+    line-height: 1.75rem;
+}
+
+/* Style of the slider inside of Posh section
+Structure: 
+    - Slider
+    - Slider-imgs
+    - Slider-static
+ */
+
+.Slider{
+    max-width: 25rem;
+    margin: 2rem auto;
+    position: relative; 
+}
+
+.Slider-imgs{
+    height: 30vh;
+    border-radius: 1.7rem;
+    
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+.Slider-imgs.isActive{
+    opacity: 1;
+}
+.Slider-static{
+    position: static;
+}
+/* Style of the Buttons of the slider
+Structure: 
+    - Posh-buttons
+    - Posh-prev
+    - Posh-next
+ */
+.Posh-buttons{
+    max-width: 20rem;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Posh-prev{
+    color: var(--color-orange);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+.Posh-prev:hover{
+    border-bottom: 1px solid var(--color-orange);
+}
+.Posh-prev:active{
+    color: var(--color-beige);
+    border-bottom: 1px solid var(--color-beige);
+}
+.Posh-next{
+    color: var(--color-green);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+.Posh-next:hover{
+    border-bottom: 1px solid var(--color-green);
+}
+.Posh-next:active{
+    color: var(--color-beige);
+    border-bottom: 1px solid var(--color-beige);
+}
+
+
+/* Style of the contact section
+Structure: 
+    - Contact
+    - Contact-wrapper
+    - Contact-h3
+    - Contact-p
+ */
+
+.Contact{
+    width: 100%;
+    margin: 0 0 6rem;
+}
+.Contact-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.Contact-h3{
+    font-size: 2.5rem;
+}
+.Contact-p{
+    line-height: 1.75rem;
+    margin: 2rem 0;
+}
+
+/* Style Footer
+Structure:
+    - Footer
+    - Star / Click
+    - Star-svg / Click-svg
+    - Footer-wrapper
+    - Footer-email
+    - Footer-socials
+    - Footer-links
+    - Footer-policies
+    - Footer-privacy
+    - Footer-a
+ */
+
+.Footer{
+    width: 100%;
+    padding: 3rem 0;
+}
+.Click{
+    max-width: 15rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.Click-svg{
+    width: 1.5rem;
+
+    animation: rotate 4s ease infinite;
+}
+/* Keyframes is not added as it is the same animation with the same codes */
+
+.Footer-wrapper{
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.Footer-email{
+    text-align: center;
+    /* Font family is added here as it was not working after adding it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Footer-email:hover{
+    color: var(--color-greige);
+}
+.Footer-email:active{
+    color: var(--color-greige);
+}
+.Footer-socials{
+    /* Font family is added here as it was not working after adding it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.Footer-links:hover{
+    color: var(--color-greige);
+}
+.Footer-links:active{
+    color: var(--color-greige);
+}
+
+.Footer-policies{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.Footer-privacy{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.Footer-a:hover{
+    color: var(--color-greige);
+}
+.Footer-a:active{
+    color: var(--color-greige);
+}
+
+
+
+/* Responsive style to adapt screens of 1150 px */
+@media (max-width: 1150px){
+
+    .Myself-h2{
+        margin: 0 0 1rem 0;
+    }
+    .Myself-p{
+        margin: 2rem 0 0;
+    }  
+}
+
+/* Responsive style to adapt screens of 750px */
+@media (max-width:750px){
+    .Menu{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .Header-button{
+        display: flex;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+    .Header-button:hover{
+        color: var(--color-greige);
+    }
+    .Header-button:active{
+        color: var(--color-greige);
+    }
+    .Header-nav{
+        display: none;
+        width: 60%;
+    }
+    .Header-nav.isActive{
+        display: block;
+    }
+    
+    .Header-ul{
+        flex-direction: column;
+    }
+    
+    .Myself-wrapper{
+        width: 70%;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: start;
+        align-items: center;
+    }
+    .Myself-left{
+        width: 100%;
+        text-align: start;
+    }
+    .Myself-right{
+        width: 100%;
+    }
+    .Footer-socials{
+        gap: 2rem;
+      }
+        
+}
+    

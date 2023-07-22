@@ -1,0 +1,186 @@
+<!-- 
+Description: This HTML file contains the about page of the web site. 
+General structure:
+- Header
+- Navigation bar
+- Main content
+- Footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>Pamela Haddad: Meet the Lebanese Designer in Madrid</title>
+    <meta name="title" content="Pamela Haddad: Meet the Lebanese Designer in Madrid" />
+    <meta name="description" content="Pamela Haddad, a Lebanese designer currently residing in Madrid, specializes in graphic design, UX/UI design, web design, and development." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Pamela Haddad: Meet the Lebanese Designer in Madrid" />
+    <meta property="og:description" content="Pamela Haddad, a Lebanese designer currently residing in Madrid, specializes in graphic design, UX/UI design, web design, and development." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta property="twitter:title" content="Pamela Haddad: Meet the Lebanese Designer in Madrid" />
+    <meta property="twitter:description" content="Pamela Haddad, a Lebanese designer currently residing in Madrid, specializes in graphic design, UX/UI design, web design, and development." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    
+    <!-- Script to link the javascript file to its own html file -->
+    <script src="js/about.js" defer></script>
+
+</head>
+<body>
+
+    <!-- Header of the ABOUT page 
+    Description: the Header contains the logo and navigation bar-->
+    <header class="Header">
+        <div class="Header-wrapper">
+            <a href="index.html" class="Header-h1" title="Logo" >
+                <img class="Header-logo" src="assets/logo-white.svg" alt="Pamela Haddad whiteLogo">
+            </a>
+            <div class="Header-wrapper Menu">
+                <nav class="Header-nav">
+                    <ul class="Header-ul">
+                        <li class="Header-li">
+                            <a href="index.html" class="Header-links" title="home page" >Home</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="about.html" class="Header-links Active" title="about page" >About</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="projects.html" class="Header-links" title="projects page" >Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="Header-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Header-svg" fill="currentColor"  viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+     <!-- End of the Header -->
+
+
+    <!-- Main of the ABOUT page 
+    Description: the Main contains all of the content of the ABOUT page-->
+    <main class="Main">
+        <!-- Hero section of the ABOUT page
+        Description: This section tell the story of myself and my work -->
+        <div class="Main-section Myself">
+            <div class="Myself-wrapper">
+                <article class="Myself-left">
+                    <img src="assets/filled-orange-star.svg" alt="star svg" class="Myself-star">
+                    <h2 class="Myself-h2">Myself In Short</h2>
+                    <span class="Myself-span">Who I am & What I Do</span>
+                    <p class="Myself-p">Hello and thank you for visiting Pamela Haddad’s portfolio. I am her, and she is me, if the name didn’t already make it clear.So yeah my name is Pamela Haddad, I’m a Lebanese painter and designer residing in Madrid, and I’m specialized in graphic design, UX/UI design, web design, and development.I’m currently seeking to get my Master’s in UX/UI. Additionally, I have a Master in Digital Marketing and a Bachelor of Arts in Interior Design. My passion for the design sector first sparked when I started building my digital design and marketing agency, Posh Design, which you will get to know more about in the coming section below. Here’s a fun fact about me, I am fluent in four languages, English, Spanish, French and Arabic. As you might notice in some of my works, I love using these languages to play with typography and visuals.</p>
+                </article>
+                <div class="Myself-right">
+                    <img src="assets/pamela-haddad-about-headshot.png" alt="Headshot Pamela Haddad" class="Myself-img Front">
+                    <!-- A small video is added that shows a small slideshow of myself
+                    Description: For the video the attributes autoplay and muted are added along with tbe loop to keep the video playing by itself. The atribute preload is added so that the video wont slow down the page -->
+                    <video autoplay muted loop preload="none" class="Myself-video">
+                        <source src="assets/Myself-video.webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hero -->
+
+        <!-- Section of Posh design
+        Description: this section to explain what posh is -->
+        <section class="Main-section Posh">
+            <div class="Posh-wrapper">
+                <h3 class="Posh-h3">What Is Posh Design?</h3>
+                <p class="Posh-p">Posh Design is an online agency that offers both design and marketing services. Initially, it began by building Posh Canvas, an online gallery where I displayed my art designs and paintings. A year later, I partnered with my sister Karen to build a sister company that prioritizes design and marketing, and that was when Posh design was born. At Posh, our main goal is to meet our clients’ unique requirements by delivering top-notch design and marketing solutions.</p>
+                <!-- A slide is added to showcase some of the Posh design projects. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page -->
+                <div class="Posh-slider Slider">
+                    <div class="Slider-wrapper">
+                        <img src="assets/Project-posh-design-bc.webp" alt="Posh design business cards" class="Slider-imgs Slider-static isActive" loading="lazy">
+                        <img src="assets/Project-posh-canvas-doodle-art.webp" alt=" posh canvas doodle art" class="Slider-imgs" loading="lazy">
+                        <img src="assets/posh-canvas-olivia-painting.webp" alt="posh canvas woman silhouette painting" class="Slider-imgs" loading="lazy">
+                        <img src="assets/Posh-design-wild-souls-bookmark.webp" alt="wild souls bookmark design" class="Slider-imgs" loading="lazy">
+                        <img src="assets/Project-posh-design-business-card.webp" alt="manager business card design" class="Slider-imgs" loading="lazy">
+                        <img src="assets/Project-posh-canvas-business-cards.webp" alt="posh canvas business card design" class="Slider-imgs" loading="lazy">
+                    </div>
+
+                </div>
+                <div class="Posh-buttons">
+                    <button class="Posh-prev">Prev</button>
+                    <button class="Posh-next">Next</button>
+                   </div>
+            </div>
+        </section>
+        <!-- End of Posh section -->
+
+        <!-- Section of contact me
+        Description: This section is to inform clients how to contact me -->
+        <section class="Main-collaborate Contact">
+            <div class="Contact-wrapper">
+                <h3 class="Contact-h3">Let's Collaborate Together!</h3>
+                <p class="Contact-p">I’m thrilled to have you here, and I can’t wait for you to explore my work! Don’t hesitate to contact me for a collaboration. Just shoot me a message on the email address below and I will get back to you shortly. Meanwhile enjoy checking some of my work exhibited on this website.</p>
+            </div>
+        </section>
+        <!-- End of Contact section -->
+
+    </main>
+    <!-- End of the Main-->
+
+
+
+    <!-- Footer
+    Description: The footer contains an email address, social media links, and the policies of privacy and cookies-->
+    <footer class="Footer">
+        <div class="Footer-click Click">
+            <img src="assets/filled-star.svg" alt="svg star" class="Click-svg" loading="lazy">
+        </div>
+        <div class="Footer-wrapper">
+            <span class="Footer-span">
+                <a href="mailto:info@pamelahaddad.com" class="Footer-email" title="email for clients to contact me">info@pamelahaddad.com</a>
+            </span>
+            <ul class="Footer-socials">
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.linkedin.com/in/pamela-haddad/" title="LinkedIn" target="_blank" rel="noreferrer" >LinkedIn</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.instagram.com/poshbypam/" title="Instagram" target="_blank" rel="noreferrer" >Instagram</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.pinterest.es/pamelawhaddad" title="Pinterest" target="_blank" rel="noreferrer" >Pinterest</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.behance.net/haddadpamela" title="Behance" target="_blank" rel="noreferrer" >Behance</a>
+                </li>
+            </ul>
+            <div class="Footer-policies">
+                <span class="Footer-copyright">&copy; Pamela Haddad 2023</span>
+                <ul class="Footer-privacy">
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/privacy-policy/" title="Privacy policy page" target="_blank" rel="noreferrer" >Privacy Policy</a>
+                    </li>
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/cookies-policy/" title="Cookies policy page" target="_blank" rel="noreferrer" >Cookies Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End of the Footer -->
+
+</body>
+</html>

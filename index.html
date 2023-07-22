@@ -1,0 +1,230 @@
+<!-- 
+Description: This HTML file contains the main home page of the web site. 
+General structure:
+- Header
+- Navigation bar
+- Main content
+- Footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>Design Portfolio-Pamela Haddad</title>
+    <meta name="title" content="Design Portfolio-Pamela Haddad" />
+    <meta name="description" content="Welcome to Pamela Haddad's online portfolio. Take a look at her design skills that include, graphic, UX UI and web design and development" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Design Portfolio-Pamela Haddad" />
+    <meta property="og:description" content="Welcome to Pamela Haddad's online portfolio. Take a look at her design skills that include, graphic, UX UI and web design and development" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta property="twitter:title" content="Design Portfolio-Pamela Haddad" />
+    <meta property="twitter:description" content="Welcome to Pamela Haddad's online portfolio. Take a look at her design skills that include, graphic, UX UI and web design and development" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- Script to link the javascript file to its own html file -->
+    <script src="js/index.js" defer></script>
+
+</head>
+
+<body>
+    
+    <!-- Header of the HOME page 
+    Description: the Header contains the logo and navigation bar-->
+    <header class="Header">
+        <div class="Header-wrapper">
+            <a href="index.html" class="Header-h1" title="Logo" >
+                <img class="Header-logo" src="assets/LOGO.svg" alt="Pamela Haddad Black Logo">
+            </a>
+            <div class="Header-wrapper Menu">
+                <nav class="Header-nav">
+                    <ul class="Header-ul">
+                        <li class="Header-li">
+                            <a href="index.html" class="Header-links Active" title="home page" >Home</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="about.html" class="Header-links" title="about page" >About</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="projects.html" class="Header-links" title="projects page" >Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="Header-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Header-svg" fill="currentColor"  viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- End of the Header -->
+
+
+    <!-- Main of the HOME page 
+    Description: the Main contains all of the content of the HOME page-->
+    <main class="Main">
+
+    <!-- Hero section of the HOME page 
+    Description: This section is the most important section as it contains the Title of the web, the services and a CTA-->
+    <article class="Main-article Hero">
+        <img src="assets/Hero-Home-Background.webp" alt="Gradient Orange Background" class="Hero-background">
+        <div class="Hero-wrapper">
+            <div class="Hero-left">
+                <img src="assets/Pamela-haddad-home-headshot.png" alt="Pamela Haddad Headshot" class="Hero-headshot">
+                <h2 class="Hero-h2">
+                    <span class="Hero-name">Pamela</span>
+                    <span class="Hero-surname">Haddad</span>
+                </h2>
+            </div>
+            <div class="Hero-right">
+                <div class="Hero-cta">
+                    <img src="assets/filled-lightbeige-star.svg" alt="svg star" class="Hero-star">
+                    <a href="about.html" class="Hero-btn" title="Button see more">See More</a>
+                </div>
+                <ul class="Hero-ul">
+                    <li class="Hero-li">Art</li>
+                    <li class="Hero-li">Graphic Design</li>
+                    <li class="Hero-li">UX UI Design</li>
+                    <li class="Hero-li">Web Design & Development</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <!-- End of the Hero -->
+
+    <!-- Section Circles
+    Description: this small section is a seperator between two sections -->
+    <div class="Main-circles Circles">
+       <div class="Circles-wrapper">
+        <span class="Circles-title">What I do</span>
+        <img src="assets/Home-circles-section.svg" alt="circles" class="Circles-img" loading="lazy">
+       </div>
+    </div>
+    <!-- End of Section circles -->
+
+    <!-- Section What I Do
+    Description: This section is about all the services I provide within my work -->
+    <section class="Main-section Skills">
+        <div class="Skills-wrapper">
+            <h3 class="Skills-h3 First">Art</h3>
+            <h3 class="Skills-h3">Graphic Design</h3>
+            <h3 class="Skills-h3">Ux Ui Design</h3>
+            <h3 class="Skills-h3">Web Design & Development</h3>
+        </div>
+    </section>
+    <!-- End of What I do section -->
+
+
+    <!-- Section Selected Work 
+    Description: this section is to showcase the selected artwork from the portfolio-->
+    <div class="Main-section Work">
+        <div class="Work-wrapper">
+            <span class="Work-title">Selected Work</span>
+
+            <!-- Project 1 Lebanese Artists Box 
+            Description: this section shows the information and pictures of one specific work, the lebanese artists box-->
+            <div class="Work-first Artists">
+                <div class="Artists-info">
+                    <img class="Artists-img" src="assets/Lebanese-artist-box-alexandra-hakim-cards.webp" alt="Bi fold lebanese jewelry designer Alexandra Hakim" loading="lazy">
+                    <article class="Artists-article">
+                        <h3 class="Artists-title">Lebanese Artists Box</h3>
+                        <p class="Artists-p">This book was initially designed and created as a final project for an Editoril Graphic Design course. Its goal is to emphasize the rich heritage of Lebanese art, the outstanding potential of emerging designers, and the limitless imagination of Lebanese artists.It stands out because it’s an entire collection rather than just a book! It includes a selection of postcards, flyers, and posters in various sizes, all organized concisely in one box. And being a proud Lebanese artist, I made sure to incorporate both Arabic and English within the design.</p>
+                    </article>
+                </div>
+                <!-- Gallery of pictures of the selected project -->
+                <div class="Artists-gallery Gallery">
+                    <img class="Gallery-imgs" src="assets/Lebanese-artist-box-bifold-Ivan-Debs.webp" alt="Bi fold Ivan Debs" loading="lazy">
+                    <img class="Gallery-imgs" src="assets/Lebanese-artist-box-cards.webp" alt="Cards lebanese artists" loading="lazy">
+                    <img class="Gallery-imgs" src="assets/Lebanese-artist-box-dana-hourani-cards.webp" alt="Card Lebanese artist Dana Hourani" loading="lazy">
+                    <img class="Gallery-imgs" src="assets/Lebanese-artist-Ivan-Debs.webp" alt="Bi fold cards Ivan Debs" loading="lazy">
+                </div>
+            </div>
+            <!-- End of Project 1 section -->
+
+
+            <!-- Project 2 Coffice Coffee Shop
+            Description: this section showcases another selected project from the portfolio -->
+            <div class="Work-second Coffice">
+                <div class="Coffice-info">
+                    
+                    <article class="Coffice-article">
+                        <h3 class="Coffice-title">Coffice Coffee Shop</h3>
+                        <p class="Coffice-p">As part of a Graphic Design Editorial course, I took on a branding project for Coffice coffee shop. Specifically, I developed two unique illustrations for the coffee shop’s new branding campaign during the Halloween season. Each illustration was paired with a catchy slogan, “Hocus Pocus I Need Coffee to Focus” and “More Espresso less Depresso,” with the designs and colors seamlessly integrated to match the overall theme.</p>
+                    </article>
+                    <img class="Coffice-img" src="assets/Coffice-coffee-cup-less-depresso.webp" alt="Coffice coffee cup design" loading="lazy">
+                </div>
+                <!-- Gallery of pictures of the selected project -->
+                <div class="Coffice-gallery Pictures">
+                    <img class="Pictures-imgs" src="assets/Coffice-coffee-bag-hocus-pocus.webp" alt="Coffice Coffee Bag" loading="lazy">
+                    <img class="Pictures-imgs" src="assets/Coffice-coffee-cup-hocus-pocus.webp" alt="Coffice Coffee Cup Hocus Pocus" loading="lazy">
+                    
+                </div>
+            </div>
+            <!-- End of Project 2 section -->
+        </div>
+    </div>
+    <!-- End of Selected work -->
+
+    </main>
+    <!-- End of the Main section -->
+
+    <!-- Footer
+    Description: The footer contains an email address, social media links, and the policies of privacy and cookies-->
+    <footer class="Footer">
+        <div class="Footer-star Star">
+            <img src="assets/filled-orange-star.svg" alt="svg star" class="Star-svg" loading="lazy">
+        </div>
+        <div class="Footer-wrapper">
+            <span class="Footer-span">
+                <a href="mailto:info@pamelahaddad.com" class="Footer-email" title="email for clients to contact me">info@pamelahaddad.com</a>
+            </span>
+            <ul class="Footer-socials">
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.linkedin.com/in/pamela-haddad/" title="LinkedIn" target="_blank" rel="noreferrer" >LinkedIn</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.instagram.com/poshbypam/" title="Instagram" target="_blank" rel="noreferrer" >Instagram</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.pinterest.es/pamelawhaddad" title="Pinterest" target="_blank" rel="noreferrer" >Pinterest</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.behance.net/haddadpamela" title="Behance" target="_blank" rel="noreferrer" >Behance</a>
+                </li>
+            </ul>
+            <div class="Footer-policies">
+                <span class="Footer-copyright">&copy; Pamela Haddad 2023</span>
+                <ul class="Footer-privacy">
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/privacy-policy/" title="Privacy policy page" target="_blank" rel="noreferrer" >Privacy Policy</a>
+                    </li>
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/cookies-policy/" title="Cookies policy page" target="_blank" rel="noreferrer" >Cookies Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End of the Footer -->
+   
+
+</body>
+</html>

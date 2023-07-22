@@ -1,0 +1,429 @@
+/* projects.css 
+- Reset
+- Custom properties
+- Body
+- Header
+- Main
+- Footer
+ */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li{ list-style: none;}
+
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    text-transform: inherit;
+     /* Font family of the headings
+    It was not working when creating it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+}
+p a{
+    display: inline;
+}
+img , video , iframe{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+form, input, textarea, label, button, fieldset, legend, select{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: transparent;
+}    
+
+:root{
+    font-size: 100%;   
+    /* Brand colores to use */
+    --color-black: #1D1D1B; 
+    --color-darkgrey: #343434;
+    --color-grey: #5A5A5A;
+    --color-darkgreen: #2B3D2D;
+    --color-green: #AEB884;
+    --color-orange: #D78B30;
+    --color-greige: #BDA974;
+    --color-beige: #E4E0C6;
+    --color-lightbeige: #F2EBD9;
+    --color-white: #F8F5ED;
+    /* Font of the body */
+    --font-body: 'Manrope', sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+    text-transform: inherit;
+    font-size: inherit; 
+    color: var(--color-beige);
+    background-color: var(--color-darkgreen);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Style of the Header 
+Structure:
+   - Header
+   - Header-wrapper
+   - Menu
+   - Header-ul
+   - Header-li
+   - Header-links
+   - Active
+   - Header-button
+   - Header-svg
+ */
+.Header{
+    width: 100%;
+    padding: 1.25rem .625rem;
+
+    position: relative;
+    z-index: 1;
+}
+.Header-wrapper{
+    width: 80%;
+    margin:auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.Header-li{
+    font-size: 1rem;
+}
+.Header-links:hover{
+    color: var(--color-greige);
+}
+.Header-links:active{
+    color: var(--color-greige);
+}
+.Active{
+    color: var(--color-greige);
+}
+.Header-button{
+    display: none;
+}
+.Header-svg{
+    width: 2rem;
+}
+
+
+/* Style of the Main of the page 
+Structure: 
+    - Main
+    - Main-h2
+    - Main-star
+    - Art
+    - Coffice
+    - Graphic
+    - Calligram
+    - Artists
+*/
+.Main{
+    width: 80%;
+    margin: 5rem auto;
+}
+.Main-h2{
+    font-size: 3.5rem;
+}
+
+/* Style of the Art gallery of the Main
+Structure: 
+    - Art
+    - Art-imgs
+Hover is added to make the pictures slightly bigger when hovering over them. Even though it was recommended not to add a hover if it is not clickable. But i wanted to show the pictures slightly on a bigger scale 
+
+ */
+.Art{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+}
+.Art-imgs{
+    width: 100%;
+    height: 21.875rem;
+    object-fit: cover;
+    border-radius: 1.7rem;
+
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.Art-imgs:hover{
+    transform: scale(1.05);
+}
+/* keyframes are crucial for an animation to work */
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.Main-star{
+    width: 1.5rem;
+    margin: 1rem auto;
+
+    animation: rotate 4s ease infinite;
+}
+/* Keyframes is not added as it is the same animation with the same codes */
+
+
+/* Style Coffice section 
+Structure: 
+    - Coffice
+*/
+.Coffice{
+    margin: 5rem 0;
+    width: 100%;
+    border-radius: 1.7rem;
+
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.Coffice:hover{
+    transform: scale(1.05);
+}
+
+/* Style graphic section 
+Structure: 
+    - Graphic
+    - Graphic-imgs
+*/
+.Graphic{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr );
+    gap: 1rem;
+}
+.Graphic-imgs{
+    width: 100%;
+    height: 18.75rem;
+    object-fit: cover;
+    border-radius: 1.7rem;
+
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.Graphic-imgs:hover{
+    transform: scale(1.05);
+}
+
+
+/* Style of the Calligram picture
+Structure: 
+    - Calligram
+ */
+.Calligram{
+    width: 100%;
+    margin: 5rem 0;
+    border-radius: 1.7rem;
+
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.Calligram:hover{
+    transform: scale(1.05);
+}
+
+
+/* Style of the Lebanese artists box section 
+Structure: 
+    - Artists
+    - Artists-imgs
+*/
+.Artists{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr );
+    gap: 1rem;
+}
+.Artists-imgs{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1.7rem;
+
+    transform: scale(1);
+    transition: all .5s ease;
+    
+}
+.Artists-imgs:hover{
+    transform: scale(1.05);
+}
+
+
+/* Style Footer
+Structure:
+    - Footer
+    - Footer-wrapper
+    - Footer-email
+    - Footer-socials
+    - Footer-links
+    - Footer-policies
+    - Footer-privacy
+    - Footer-a
+ */
+
+.Footer{
+    width: 100%; 
+    padding: 3rem 0;
+}
+.Footer-wrapper{
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.Footer-email{
+    /* Font family is added here as it was not working after adding it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+.Footer-email:hover{
+    color: var(--color-greige);
+}
+.Footer-email:active{
+    color: var(--color-greige);
+}
+.Footer-socials{
+    /* Font family is added here as it was not working after adding it as a custom property */
+    font-family: 'ps-aelyn';
+    src: url('ps-aelyn-regular-webfont.woff2') format('woff2'),
+         url('ps-aelyn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.Footer-links:hover{
+    color: var(--color-greige);
+}
+.Footer-links:active{
+    color: var(--color-greige);
+}
+
+.Footer-policies{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.Footer-privacy{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.Footer-a:hover{
+    color: var(--color-greige);
+}
+.Footer-a:active{
+    color: var(--color-greige);
+}
+
+
+/* Responsive style to adapt screens of 1150 */
+@media (max-width: 1150px){
+    .Art{
+        grid-template-columns: repeat( 3 , 1fr );
+    }
+}
+
+/* Responsive style to adapt screens of 750px */
+@media (max-width:750px){
+    .Menu{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: flex-start;
+        align-items: flex-end; 
+    }
+    .Header-button{
+        display: flex;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+    .Header-button:hover{
+        color: var(--color-greige);
+    }
+    .Header-button:active{
+        color: var(--color-greige);
+    }
+    .Header-nav{
+        display: none;
+        width: 60%;
+    }
+    .Header-nav.isActive{
+        display: block;
+    }
+    
+    .Header-ul{
+        flex-direction: column;
+    }
+
+    .Art{
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+    .Graphic{
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+    .Artists-imgs{
+        height: 300px;
+    }
+    .Footer-socials{
+        gap: 2rem;
+    }
+}
+
+/* responsive style to adapt screens of 600px */
+@media (max-width:600px){
+    .Art , .Graphic , .Artists{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,189 @@
+<!-- 
+Description: This HTML file contains the projects page of the web site. 
+General structure:
+- Header
+- Navigation bar
+- Main content
+- Footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>Projects - Pamela Haddad</title>
+    <meta name="title" content="Projects - Pamela Haddad" />
+    <meta name="description" content="Have a look at Pamela Haddad's showreel of projects highlighting her skills in graphic, UX UI and web design and development." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Projects - Pamela Haddad" />
+    <meta property="og:description" content="Have a look at Pamela Haddad's showreel of projects highlighting her skills in graphic, UX UI and web design and development." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta property="twitter:title" content="Projects - Pamela Haddad" />
+    <meta property="twitter:description" content="Have a look at Pamela Haddad's showreel of projects highlighting her skills in graphic, UX UI and web design and development." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- Script to link the javascript file to its own html file -->
+    <script src="js/projects.js" defer></script>
+
+</head>
+<body>
+
+    <!-- Header of the Projects page 
+    Description: the Header contains the logo and navigation bar-->
+    <header class="Header">
+        <div class="Header-wrapper">
+            <a href="index.html" class="Header-h1" title="Logo" >
+                <img class="Header-logo" src="assets/logo-white.svg" alt="Pamela Haddad white Logo">
+            </a>
+            <div class="Header-wrapper Menu">
+                <nav class="Header-nav">
+                    <ul class="Header-ul">
+                        <li class="Header-li">
+                            <a href="index.html" class="Header-links" title="home page" >Home</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="about.html" class="Header-links" title="about page" >About</a>
+                        </li>
+                        <li class="Header-li">
+                            <a href="projects.html" class="Header-links Active" title="projects page" >Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="Header-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Header-svg" fill="currentColor"  viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+     <!-- End of the Header -->
+
+
+     <!-- Main of the PROJECTS page 
+    Description: the Main contains all of the content of the PROJECTS page-->
+    <main class="Main">
+        <h2 class="Main-h2">Showreel</h2>
+
+    <!-- Art section
+     Description: A selection of pictures showing the art work -->
+        <div class="Main-wrapper Art">
+            <img src="assets/posh-canvas-everly-painting.png" alt="woman silhouette painting" class="Art-imgs">
+            <img src="assets/Project-posh-canvas-family-painting.png" alt="doodle family painting" class="Art-imgs">
+            <img src="assets/Project-posh-canvas-mother.png" alt="mother painting" class="Art-imgs">
+            <img src="assets/posh-canvas-tiffany-painting.png" alt="shy woman silhouette painting" class="Art-imgs">
+            <img src="assets/Project-posh-canvas-doodle-art.webp" alt="doodle art painting" class="Art-imgs">
+            <img src="assets/posh-canvas-emmele-painting.png" alt="black lives matter one line painting" class="Art-imgs">
+            <img src="assets/posh-canvas-olivia-painting.webp" alt="woman silhouette with wine glass painting" class="Art-imgs">
+            <img src="assets/kaws.png" alt="kaws painting" class="Art-imgs">
+        </div>
+        <!-- End of the Art section -->
+
+        <!-- Star animation -->
+        <img src="assets/filled-lightbeige-star.svg" alt="star svg" class="Main-star">
+        <!-- End of star animation -->
+
+        <!-- Coffice section. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page-->
+        <img src="assets/Coffice-coffee-cup-hocus-pocus.png" alt="coffice coffee cup hocus pocus I need coffee to focus" class="Main-img Coffice" loading="lazy">
+        <!-- End of coffice section -->
+       
+       
+         <!-- Star animation. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page-->
+        <img src="assets/filled-lightbeige-star.svg" alt="star svg" class="Main-star" loading="lazy">
+        <!-- End of star animation -->
+
+
+        <!-- Graphic design section
+        Description: A selection of pictures showing some graphic design projects. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page -->
+        <div class="Main-wrapper Graphic">
+            <img src="assets/Project-posh-design-bc.webp" alt="posh design business card" class="Graphic-imgs" loading="lazy">
+            <img src="assets/Coffice-coffee-bag-hocus-pocus.webp" alt="coffice coffee bag" class="Graphic-imgs" loading="lazy">
+            <img src="assets/project-bookmark-first-date.png" alt="first date bookamrk design" class="Graphic-imgs" loading="lazy">
+            <img src="assets/Project-posh-canvas-business-cards.webp" alt="posh canvas business cards" class="Graphic-imgs" loading="lazy">
+            <img src="assets/Coffice-coffee-cup-less-depresso.webp" alt="coffice coffee cup more espresso less depresso" class="Graphic-imgs" loading="lazy">
+            <img src="assets/Project-posh-design-business-card.webp" alt="manager business card design" class="Graphic-imgs" loading="lazy">
+        </div>
+        <!-- End of graphic design section -->
+
+        <!-- Star animation. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page-->
+        <img src="assets/filled-lightbeige-star.svg" alt="star svg" class="Main-star" loading="lazy">
+        <!-- End of star animation -->
+
+        <!-- Calligram section. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page-->
+        <img class="Main-img Calligram" src="assets/calligram-iranian-woman.png" alt="coffice coffee cup hocus pocus I need coffee to focus" loading="lazy">
+        <!-- End of Calligram section -->
+
+        <!-- Star animation-->
+        <img src="assets/filled-lightbeige-star.svg" alt="star svg" class="Main-star" loading="lazy">
+        <!-- End of star animation -->
+
+        <!-- Lebanese Artists box section
+        Description: A selection of pictures showing more projects. The attribute loading lazy is added on all the pictures so that they won't slow down the web as these pictures do not show at the begining of the page-->
+        <div class="Main-wrapper Artists">
+            <img class="Artists-imgs" src="assets/Lebanese-artist-box-alexandra-hakim-cards.webp" alt="bi-fold card design for lebanese jewelry designer Alexandra Hakim" loading="lazy">
+            <img class="Artists-imgs" src="assets/Lebanese-artist-Ivan-Debs.webp" alt="bi-fold card design for lebanese artist Ivan Debs" loading="lazy">
+            <img class="Artists-imgs" src="assets/Lebanese-artist-box-cards.webp" alt="post card design for lebanese artists" loading="lazy">
+            <img class="Artists-imgs" src="assets/Lebanese-artist-box-dana-hourani-cards.webp" alt="post card design for lebanese artist Dana Hourani" loading="lazy">
+        </div>
+        <!-- End of Lebanese Artists box section -->
+
+    </main>
+    <!-- End of the Main section -->
+
+
+
+
+    <!-- Footer
+    Description: The footer contains an email address, social media links, and the policies of privacy and cookies-->
+     <footer class="Footer">
+        <div class="Footer-wrapper">
+            <span class="Footer-span">
+                <a href="mailto:info@pamelahaddad.com" class="Footer-email" title="email for clients to contact me">info@pamelahaddad.com</a>
+            </span>
+            <ul class="Footer-socials">
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.linkedin.com/in/pamela-haddad/" title="LinkedIn" target="_blank" rel="noreferrer" >LinkedIn</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.instagram.com/poshbypam/" title="Instagram" target="_blank" rel="noreferrer" >Instagram</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.pinterest.es/pamelawhaddad" title="Pinterest" target="_blank" rel="noreferrer" >Pinterest</a>
+                </li>
+                <li class="Footer-media">
+                    <a class="Footer-links" href="https://www.behance.net/haddadpamela" title="Behance" target="_blank" rel="noreferrer" >Behance</a>
+                </li>
+            </ul>
+            <div class="Footer-policies">
+                <span class="Footer-copyright">&copy; Pamela Haddad 2023</span>
+                <ul class="Footer-privacy">
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/privacy-policy/" title="Privacy policy page" target="_blank" rel="noreferrer" >Privacy Policy</a>
+                    </li>
+                    <li class="Footer-cookies">
+                        <a class="Footer-a" href="https://pamelahaddad.com/cookies-policy/" title="Cookies policy page" target="_blank" rel="noreferrer" >Cookies Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- End of the Footer -->
+    
+</body>
+</html>
